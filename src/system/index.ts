@@ -7,6 +7,7 @@ import { ExamRecord } from "./ExamRecord";
 import { StudentScore } from "./StudentScore";
 import { StudentInfo } from "./StudentInfo";
 import { AdminUser } from "./AdminUser";
+import { Book } from "./Book";
 
 
 const st = new Student("özge", "Can",25, "12345")
@@ -75,3 +76,7 @@ console.log(StudentInfo.schoolName);
 const Admin = new AdminUser("Özge", 25);
 
 console.log(Admin.introduce());
+
+const b = new Book ("Tutunamayanlar", "Oğuz Atay", 123456);
+
+console.log(b.displayInfo());
