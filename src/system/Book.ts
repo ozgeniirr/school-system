@@ -1,18 +1,18 @@
+import { Item } from "./Item";
 
 
-export class Book{
-    title:string;
+export class Book extends Item {
     author:string;
     readonly isbn:number;
 
 
-    constructor(title:string, author:string, isbn: number){
-        this.title=title;
-        this.author=author;
-        this.isbn=isbn;
+    constructor( title:string, publishedYear: number, available:boolean, author:string, isbn: number){
+        super(title,publishedYear,available )
+        this.author= author;
+        this.isbn = isbn;
     }
 
-    displayInfo(): string{
-        return `Kitabınadı: ${this.title}, Kitabın yazarı: ${this.author}, isbn: ${this.isbn}`
+    getInfo(): string{
+        return `Kitabınadı: ${this.title}, Kitabın yazarı: ${this.author}, Basım Yılı: ${this.publishedYear}, isbn: ${this.isbn}, Stok durumu: ${this.available}`
     }
 }

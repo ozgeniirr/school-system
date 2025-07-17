@@ -8,6 +8,9 @@ import { StudentScore } from "./StudentScore";
 import { StudentInfo } from "./StudentInfo";
 import { AdminUser } from "./AdminUser";
 import { Book } from "./Book";
+import { Magazine } from "./Magazine";
+import { Library } from "./Library";
+import { Lion } from "./Lion";
 
 
 const st = new Student("özge", "Can",25, "12345")
@@ -77,6 +80,20 @@ const Admin = new AdminUser("Özge", 25);
 
 console.log(Admin.introduce());
 
-const b = new Book ("Tutunamayanlar", "Oğuz Atay", 123456);
+const b = new Book("Tutunamayanlar", 2000, true, "Oğuz Atay", 23849023)
+//console.log(b.getInfo());
+//b.isbn= 36546376;
+const m = new Magazine("Kafka", 2024, true, 543)
+//console.log(m.getInfo());
 
-console.log(b.displayInfo());
+
+const lib = new Library();
+
+lib.addItem(b);
+lib.addItem(m);
+lib.listItems();
+
+const Li = new Lion("Simba", 4, "lion", 10)
+
+console.log(Li.getInfo());
+console.log(Li.makeSound());
