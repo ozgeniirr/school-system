@@ -1,5 +1,5 @@
-import { ITeacher } from "../interfaces/ITeacher";
-import { Person } from "../system/Person";
+import { ITeacher } from "../../interfaces/ITeacher";
+import { Person } from "./Person";
 
 
 export class Teacher extends Person implements ITeacher{

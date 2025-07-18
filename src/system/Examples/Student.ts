@@ -1,5 +1,5 @@
-import { IStudent } from "../interfaces/IStudent";
-import { Person } from "../system/Person";
+import { IStudent } from "../../interfaces/IStudent";
+import { Person } from "./Person";
 
 
 export class Student extends Person implements IStudent {

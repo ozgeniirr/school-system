@@ -1,5 +1,5 @@
-import { Teacher } from "../system/Teacher";
-import { Student } from "../system/Student";
+import { Teacher } from "./Teacher";
+import { Student } from "./Student";
 
  export class Course {
     name:string;
